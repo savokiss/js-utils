@@ -1,8 +1,8 @@
 {
   "name": "@savo/js-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "JS utils collection",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
     "build": "webpack -p"
   },
