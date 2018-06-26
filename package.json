@@ -1,6 +1,6 @@
 {
   "name": "@savo/js-utils",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "JS utils collection",
   "main": "dist/main.cjs.js",
   "module": "dist/main.esm.js",

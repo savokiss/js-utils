@@ -1,10 +1,13 @@
 import storage from './storage'
+import Matrix from './Matrix'
 
 export {
-  storage
+  storage,
+  Matrix
 }
 
 export default {
-  storage
+  storage,
+  Matrix
 }
 
