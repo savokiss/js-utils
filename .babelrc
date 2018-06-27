@@ -1,0 +1,16 @@
+{
+  "env": {
+    "main": {
+      "presets": [
+        ["env", {
+          "modules": false
+        }],
+        "stage-2"
+      ],
+      "plugins": ["external-helpers"]
+    },
+    "test": {
+      "presets": ["env", "stage-2"]
+    }
+  }
+}
