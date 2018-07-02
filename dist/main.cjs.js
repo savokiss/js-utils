@@ -158,9 +158,24 @@ var Matrix = function () {
   return Matrix;
 }();
 
+// backoff polling
+// using setTimeout insteadof setInterval
+// inspired by https://blog.github.com/2009-07-30-smart-js-polling/
+function poller(callback) {
+  var wait = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3000;
+  var multiplier = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 1;
+(function startPoller() {
+    setTimeout(function () {
+      callback.call(this, startPoller);
+    }, wait);
+    wait = wait * multiplier;
+  })();
+}
+
 var index = {
   storage: storage,
-  Matrix: Matrix
+  Matrix: Matrix,
+  poller: poller
 };
 
 module.exports = index;
