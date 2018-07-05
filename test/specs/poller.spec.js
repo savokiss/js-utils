@@ -35,7 +35,7 @@ describe('poller', () => {
     retryFn()
     expect(setTimeout).toHaveBeenCalledTimes(3)
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 4000)
-    
+
     retryFn()
     expect(setTimeout).toHaveBeenCalledTimes(4)
     expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 8000)
