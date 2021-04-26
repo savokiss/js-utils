@@ -1,13 +1,17 @@
 # js-utils
+
 JS utils collection
 
 ## Install
+
 ```bash
 npm i @savo/js-utils
 ```
 
 ## Usage
+
 ### Storage
+
 ```js
 import { storage } from '@savo/js-utils'
 
@@ -18,6 +22,7 @@ storage.clear() // clear all
 ```
 
 ### Matrix
+
 ```js
 import { Matrix } from '@savo/js-utils'
 
@@ -32,6 +37,7 @@ matrix.getRow(1) // get the second row
 ### poller
 
 #### using like setInterval
+
 ```js
 import axios from 'axios'
 import { poller } from '@savo/js-utils'
@@ -44,6 +50,7 @@ poller(retry => {
 ```
 
 #### request retry
+
 ```js
 import axios from 'axios'
 import { poller } from '@savo/js-utils'
